@@ -22,6 +22,7 @@ public class TestingSelenium {
 		//AssertJUnit.assertTrue(title.contains("Demo Guru99 Page")); 
 	  System.out.println("Testing started...");
 	  Response response = RestAssured.get("https://reqres.in/api/users?page=2");
+	  System.out.println("API call done...");
 	  System.out.println(response.statusCode());
 	  System.out.println(response.asString());
 	  System.out.println(response.getBody().asString());
